@@ -19,8 +19,8 @@ int main() {
 			else { printf("-1\n"); }
 		}
 		else if (!strcmp(c, "size")) {
-			if (q != -1) { printf("%d\n", q + 1); }
-			else { printf("0\n"); }
+			if (q != -1) { printf("%d\n", q + 1); }	// 굳이 이것을 if 문으로 만들어둔 이유는
+			else { printf("0\n"); }			// [4ms] 시간 조차 단축하기 위함
 		}
 		else if (!strcmp(c, "empty")) {
 			if (q != -1) { printf("0\n"); }
