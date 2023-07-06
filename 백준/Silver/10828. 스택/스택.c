@@ -1,9 +1,10 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <string.h>
+#include <string.h>	// 문자열 비교 (strcmp, strncmp) 다른 하나는 특정 문자열 위치 비교
+#include <stdlib.h>	// 메모리 동적 할당 (malloc, free)
 
 int main() {
-	char c[8] = ""; int a, b, q = -1;
+	char *c[8] = ""; int a, b, q = -1;
 	scanf("%d", &a);
 	int* p = (int*)malloc(sizeof(int) * a + 1);
 	for (int n = 0; n < a; n++) {
@@ -33,3 +34,6 @@ int main() {
 	free(p);
 	return 0;
 }
+/* ■ 설명 ■
+전형적인 스택(stack) 함수를 구현한 코드이다.
+*/
