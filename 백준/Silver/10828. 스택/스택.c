@@ -4,7 +4,7 @@
 #include <stdlib.h>	// 메모리 동적 할당 (malloc, free)
 
 int main() {
-	char *c[8] = ""; int a, b, q = -1;
+	char c[8] = ""; int a, b, q = -1;
 	scanf("%d", &a);
 	int* p = (int*)malloc(sizeof(int) * a + 1);
 	for (int n = 0; n < a; n++) {
