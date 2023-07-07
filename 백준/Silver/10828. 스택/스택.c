@@ -9,7 +9,7 @@ int main() {
 	int* p = (int*)malloc(sizeof(int) * a + 1);
 	for (int n = 0; n < a; n++) {
 		scanf("%s", &c);
-		strcmp(c, "push");
+		
 		if (!strcmp(c, "push")) {
 			scanf("%d", &b);
 			p[++q] = b;
