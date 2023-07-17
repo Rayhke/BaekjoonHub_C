@@ -29,3 +29,6 @@ int main() {
 	free(p);
 	return 0;
 }
+/* ■ 설명 ■
+
+*/
