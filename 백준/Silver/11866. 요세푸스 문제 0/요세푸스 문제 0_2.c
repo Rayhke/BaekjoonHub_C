@@ -14,7 +14,7 @@ int main() {
 	for (int n = 0; n < size; n++) {					// [size] 인원 수 만큼 반복되며,
 		for (int m = 0; m < kick - 1; m++) {				// [kick] 번 째 사람을 지목할 때 까지, 큐(Queue)의 방식으로 원소를 빼고 넣는 다.
 			a = p[n];
-			for (int l = n; l < size - 1; l++) { p[l] = p[l + 1]; }
+			for (int l = n; l < size - 1; l++) { p[l] = p[l + 1]; }	// 당겨오는 절차
 			p[size - 1] = a;
 		}
 	}
