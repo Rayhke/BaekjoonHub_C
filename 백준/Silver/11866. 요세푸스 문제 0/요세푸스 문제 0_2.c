@@ -5,8 +5,12 @@
 int main() {
 	int a, size, kick;
 	scanf("%d %d", &size, &kick);
-	int* p = (int*)malloc(sizeof(int) * size);			// ◆ 만약 임의로 사람 번호를 매기고 싶다면
+
+	
+	int* p = (int*)malloc(sizeof(int) * size);		// ◆ 만약 임의로 사람 번호를 매기고 싶다면
 	for (int n = 0; n < size; n++) { p[n] = n + 1; }	// for (int n = 0; n < size; n++) { scanf_s("%d", &p[n]); }
+
+	
 	for (int n = 0; n < size; n++) {
 		for (int m = 0; m < kick - 1; m++) {
 			a = p[n];
@@ -14,6 +18,8 @@ int main() {
 			p[size - 1] = a;
 		}
 	}
+
+	
 	printf("<");
 	for (int n = 0; n < size; n++) {
 		printf("%d", p[n]);
