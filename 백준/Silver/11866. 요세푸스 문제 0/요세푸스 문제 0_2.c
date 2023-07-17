@@ -7,12 +7,12 @@ int main() {
 	scanf("%d %d", &size, &kick);
 
 	
-	int* p = (int*)malloc(sizeof(int) * size);		// ◆ 만약 임의로 사람 번호를 매기고 싶다면
-	for (int n = 0; n < size; n++) { p[n] = n + 1; }	// for (int n = 0; n < size; n++) { scanf_s("%d", &p[n]); }
+	int* p = (int*)malloc(sizeof(int) * size);				// ◆ 만약 임의로 사람 번호를 매기고 싶다면
+	for (int n = 0; n < size; n++) { p[n] = n + 1; }			// for (int n = 0; n < size; n++) { scanf_s("%d", &p[n]); }
 
 	
-	for (int n = 0; n < size; n++) {
-		for (int m = 0; m < kick - 1; m++) {
+	for (int n = 0; n < size; n++) {					// [size] 인원 수 만큼 반복되며,
+		for (int m = 0; m < kick - 1; m++) {				// [kick] 번 째 사람을 지목하여 제외
 			a = p[n];
 			for (int l = n; l < size - 1; l++) { p[l] = p[l + 1]; }
 			p[size - 1] = a;
